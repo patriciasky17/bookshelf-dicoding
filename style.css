@@ -1,0 +1,357 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #F9F3EE;
+}
+
+nav {
+    width: auto;
+    display: flex;
+    background: #F2E6DD;
+    justify-content: space-around;
+    color : #353535;
+    font-family: 'DM Sans', sans-serif;
+    height: 60px;
+    align-items: center;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width : 60%;
+    justify-content:flex-end;
+    margin-top: 15px;
+}
+
+nav ul li a {
+    flex-direction: row;
+    text-decoration: none;
+    color: black;
+    margin-right: 30px;
+    margin-left: 30px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #ffe7d1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    color: #dfa588;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+main{
+    padding: 0 100px 0 100px;
+}
+
+#about {
+    text-align: center;
+    line-height: 40px;
+    width: 100%;
+    height: 100%;
+}
+
+.bagian-input,
+.bagian-cari,
+.bagian-edit {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #f4f4f4;
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    border-radius: 10px;
+}
+
+.bagian-input h2,
+.bagian-cari h2,
+.bagian-edit h2 {
+    text-align: center;
+    color: #D48862;
+}
+
+.bagian-input > form > .input,
+.bagian-cari > form > .input,
+.bagian-edit > form > .edit {
+    margin: 15px 0;
+}
+
+.bagian-input > form > button,
+.bagian-edit > form > button{
+    background-color: #D48862;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.bagian-cari > form > button{
+    background-color: #D48862;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    display: block;
+    width: 15%;
+    padding: 11px;
+    cursor: pointer;
+    margin-top: -10px;
+}
+
+.bagian-input > form > button > span {
+    font-weight: bold;
+}
+
+.bagian-input > #inputBukuSatuan,
+.bagian-cari > #cariBukuSatuan,
+.bagian-edit > #editBukuSatuan{
+    margin: 10px 30px;
+}
+
+
+.bagian-input > #inputBukuSatuan > .input,
+.bagian-cari > #cariBukuSatuan,
+.bagian-edit > #editBukuSatuan> .edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bagian-input > #inputBukuSatuan > .input > label,
+.bagian-cari > #cariBukuSatuan >  label,
+.bagian-edit > #editBukuSatuan> .edit > label {
+    width: 10%;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.bagian-input > #inputBukuSatuan > .input > input,
+.bagian-cari > #cariBukuSatuan >  input,
+.bagian-edit > #editBukuSatuan> .edit > input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.215);
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bagian-input > #inputBukuSatuan > .input_baca > label{
+    width: 10%;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.bagian-input > #inputBukuSatuan > .input_baca > input{
+    padding: 10px;
+    margin-left: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.137);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.kumpulan-buku{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.buku-belum-selesai,
+.buku-selesai {
+    width: 50%;
+}
+
+.buku-belum-selesai h2,
+.buku-selesai h2{
+    text-align: center;
+    color: #7d4e36;
+}
+
+.kumpulan-buku > .buku-belum-selesai > .list-buku,
+.kumpulan-buku > .buku-selesai > .list-buku{
+    padding: 16px;
+}
+
+.kumpulan-buku > .buku-belum-selesai > .list-buku > .buku-satuan,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan{
+    padding: 8px 16px 16px 16px;
+    border: 1px solid rgba(0, 0, 0, 0.04);
+    background: #f4f4f4;
+    box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+
+.kumpulan-buku > .buku-belum-selesai >.list-buku > .buku-satuan > h3, p,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > h3, p{
+    margin: 8px 0;
+}
+
+.kumpulan-buku > .buku-belum-selesai >.list-buku > .buku-satuan > .tombol-aksi > button,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > .tombol-aksi > button{
+    border: 0;
+    padding: 5px;
+    margin: 0 3px 0 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.kumpulan-buku > .buku-belum-selesai > .list-buku > .buku-satuan > .tombol-aksi > .hijau,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > .tombol-aksi > .hijau{
+    background-color: darkgreen;
+    color: white;
+}
+
+.kumpulan-buku > .buku-belum-selesai > .list-buku > .buku-satuan > .tombol-aksi > .merah,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > .tombol-aksi > .merah{
+    background-color: darkred;
+    color: white;
+}
+
+.kumpulan-buku > .buku-belum-selesai > .list-buku > .buku-satuan > .tombol-aksi > .kuning,
+.kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > .tombol-aksi > .kuning{
+    background-color: rgb(255, 185, 35);
+    color: white;
+}
+
+footer{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #F2E6DD;
+    padding: 5px 0 5px 0;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 830px) {
+    main{
+        margin: 0 5px 0 5px;
+    }
+
+    #navbar h2{
+        font-size: 20px;
+    }
+
+    nav ul {
+        width : 70%;
+    }
+
+    .bagian-input,
+    .bagian-cari,
+    .bagian-edit{
+        width: 100%;
+    }
+
+    .bagian-input,
+    .bagian-cari,
+    .bagian-edit {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        padding: 16px;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        background: #f4f4f4;
+        box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+        border-radius: 10px;
+    }
+
+    .bagian-input > #inputBukuSatuan > .input > label,
+    .bagian-cari > #cariBukuSatuan >  label,
+    .bagian-edit > #editBukuSatuan> .edit > label {
+        width: 30%;
+    }
+
+    .bagian-input > #inputBukuSatuan > .input > input,
+    .bagian-cari > #cariBukuSatuan >  input{
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.215);
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+
+    .kumpulan-buku{
+        display: inline;
+        margin-top: 20px;
+        border-radius: 10px;
+    }
+
+    .buku-belum-selesai,
+    .buku-selesai {
+        width: 100%;
+    }
+
+    .kumpulan-buku > .buku-belum-selesai >.list-buku > .buku-satuan > .tombol-aksi > button,
+    .kumpulan-buku > .buku-selesai > .list-buku > .buku-satuan > .tombol-aksi > button{
+        text-align: center;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width : 600px) {
+    main{
+        padding: 0 5px 0 5px;
+    }
+
+    .bagian-input,
+    .bagian-cari,
+    .bagian-edit {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(0, 0, 0, 0.04);
+        background: #f4f4f4;
+        box-shadow:  20px 20px 60px #bebebe,-20px -20px 60px #ffffff;
+        border-radius: 10px;
+    }
+
+    .bagian-input > #inputBukuSatuan > .input > label,
+    .bagian-cari > #cariBukuSatuan >  label,
+    .bagian-edit > #editBukuSatuan> .edit > label{
+        width: 40%;
+        font-size: 14px;
+    }
+
+    nav ul {
+        width : 50%;
+    }
+
+    #navbar{
+        padding: 0 10px 0 10px;
+    }
+
+    #navbar h2{
+        font-size: 15px;
+    }
+
+    #navbar ul li a{
+        font-size: 14px;
+    }
+
+    .bagian-input > #inputBukuSatuan > .input_baca > label {
+        font-size: 14px;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+    }
+}

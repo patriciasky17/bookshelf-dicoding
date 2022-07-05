@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bookshelf</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar" class="top-navbar">
+            <h2>My Bookshelf</h2>
+
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#inputBukuSatuan">Add</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <br>
+            <br>
+            <h2>About</h2>
+            <p>
+                This is a simple web application that allows you to add books to your bookshelf. <br>
+                You can search for books by title. <br>
+                You can also add a book to your bookshelf by clicking the "Add" button. <br>
+                <br>
+                <b>Enjoy!</b> 
+                <br>
+                <br>
+            </p>
+        </section>
+
+
+
+        <section class="bagian-input">
+            <h2>Masukkan Buku Baru</h2>
+            <form id="inputBukuSatuan">
+                <div class="input">
+                    <label for="inputJudulBuku">Judul</label>
+                    <input id="inputJudulBuku" type="text" placeholder= "Contoh: Love for Imperfect Things" required>
+                </div>
+                <div class="input">
+                    <label for="inputPenulis">Penulis</label>
+                    <input id="inputPenulis" type="text" placeholder= "Contoh: Haemin Sunim" required>
+                </div>
+                <div class="input">
+                    <label for="inputTahunTerbit">Tahun</label>
+                    <input id="inputTahunTerbit" type="number" placeholder= "Contoh: 2016" required>
+                </div>
+                <div class="input">
+                    <label for="inputGenreBuku">Genre</label>
+                    <input id="inputGenreBuku" type="text" placeholder= "Contoh: Romance, Slice of Life" required>
+                </div>
+                <div class="input_baca">
+                    <label for="inputSelesaiBaca">Selesai dibaca</label>
+                    <input id="inputSelesaiBaca" type="checkbox">
+                </div>
+                <button id="tambahBuku" type="submit">Tambah Buku</button>
+            </form>
+        </section>
+
+        <section class="bagian-edit">
+            <h2>Edit Buku</h2>
+            <form id="editBukuSatuan">
+                <div class="edit">
+                    <label for="editJudulBuku">Judul</label>
+                    <input id="editJudulBuku" type="text" placeholder= "Contoh: Love for Imperfect Things" required>
+                </div>
+                <div class="edit">
+                    <label for="editPenulis">Penulis</label>
+                    <input id="editPenulis" type="text" placeholder= "Contoh: Haemin Sunim" required>
+                </div>
+                <div class="edit">
+                    <label for="editTahunTerbit">Tahun</label>
+                    <input id="editTahunTerbit" type="number" placeholder= "Contoh: 2016" required>
+                </div>
+                <div class="edit">
+                    <label for="editGenreBuku">Genre</label>
+                    <input id="editGenreBuku" type="text" placeholder= "Contoh: Romance, Slice of Life" required>
+                </div>
+                <button id="editBuku" type="submit">Edit Buku</button>
+            </form>
+        </section>
+        
+        <section class="bagian-cari">
+            <h2>Cari Buku</h2>
+            <form id="cariBukuSatuan">
+                <label for="cariJudulBuku">Judul</label>
+                <input id="cariJudulBuku" type="text" placeholder="Cari berdasarkan judul buku!">
+                <button id="cariBuku" type="submit">🔎︎</button>
+            </form>
+        </section>
+
+        <section class="kumpulan-buku">
+            <div class="buku-belum-selesai">
+                <h2>Belum selesai dibaca</h2>
+                <div id="listBukuBelumSelesai" class="list-buku"></div>
+            </div>
+
+            <div class="buku-selesai">
+                <h2>Selesai dibaca</h2>
+                <div id="listBukuSelesai" class="list-buku"></div>
+            </div>
+            
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Copyright 2022</p>
+        <p>Submission for Dicoding Academy</p>
+        <p>Made by Patricia Ho</p>
+    </footer>
+
+    <script src="./main.js"></script>
+</body>
+</html>
